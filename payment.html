@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+<head>
+    <title>Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--External Master CSS-->
+    <link rel="stylesheet" href="master.css">
+    <!--External Payment Styles-->
+    <link rel="stylesheet" href="payment.css">
+    <!--External Font Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!--Body-->
+<body>
+    <!--Master Navigation-->
+    <div class="topnav">        
+        <div class="topnav-right">
+            <a href="cart.html">Cart<i class="fa fa-fw fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <!--Main-->
+    <h1>Check Out</h1>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="NY">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Place Order" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+                <p><a href="https://www.etsy.com/listing/1136923316/day-begins-is-an-original-art-quilt-that?click_key=1f1a5f7f14cc5c10a0039383476e9db573785a1c%3A1136923316&click_sum=8cfac09c&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=art+for+sale&ref=sr_gallery-1-2&frs=1">Day Begins by Ann Brauer</a> <span class="price">$1,800.00</span></p>
+                <p><a href="https://www.etsy.com/listing/1030853077/bien-hoa-ceramics-vintage-rare-large?click_key=ac85eacece00a1075f39519fc85f1507572f5657%3A1030853077&click_sum=9ea92750&ga_order=price_desc&ga_search_type=all&ga_view_type=gallery&ga_search_query=ceramic+viet+nam&ref=sr_gallery-1-3&organic_search_click=1&frs=1&cns=1">Bien Hoa Ceramics by VIETARTIQUES</a> <span class="price">$425.00</span></p>
+                <hr>
+                <p>Subtotal <span class="price" style="color:black"><b>$2,225.00</b></span></p>
+                <p>Tax(5%) <span class="price" style="color:black"><b>$111.25</b></span></p>
+                <p>Shipping <span class="price" style="color:black"><b>$45.00</b></span></p>
+                <p>Total <span class="price" style="color:black"><b>$2,381.25</b></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

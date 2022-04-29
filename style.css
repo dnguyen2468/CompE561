@@ -1,0 +1,51 @@
+.home-section {
+  position: relative;
+  height: 440px;
+}
+
+.home-section img {
+  width: 100%;
+  height: 440px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.home-section .details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #3338;
+  background: black;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.5)),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.home-section .details a {
+  -webkit-text-decoration-color: white;
+  text-decoration-color: white;
+}
+
+.home-section .details h1,
+.home-section .details p {
+  color: white;
+  width: 50%;
+  margin: auto;
+  min-width: 500px;
+}
+
+.home-section .details h1 {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

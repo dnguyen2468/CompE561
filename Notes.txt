@@ -1,0 +1,136 @@
+page0 : sign in or sign up (not required but if making purchase its needed) popup page
+	  (https://www.etsy.com/)
+page1 : main page showcasing differnt art styles and also have a 
+	  task bar and a sign in option (refer https://www.apple.com/) about/contact us 
+	  link as well 
+page2 : when selected , should show case that set of art (showing different diagrams 
+	  artists)
+page3 : showing the set art which was selected showing more details about the art and 
+	  autor contact , this will also show whether the art is for sale or not, if so 
+	  what is the price 
+page4 : cart page and check out (https://www.etsy.com/)
+page5 : payment page for the sale (add to cart) (https://www.etsy.com/)
+page6 : confirmation page (after payment) or summary page 
+page7 : profile page (showing the user info etc)
+page8 : favorite page (showing all the artwork that you were instrseted in)
+page9 : about and contact us in the same page 
+
+*********************************************************************************************
+common things on every page will be the task bar and the contact/ about us link at the 
+end of the page 
+Types :
+	1) paintings (P)
+	2) wood carving (W)
+	3) ceramic	(C)
+	4) glass blowing art (G)
+	5) metalworking art (M)
+	6) leather art (L)
+
+page2-3 : Depend on the style that the user choose. (6 page2's)
+page3 : will also depend on the art selected (if 20 per page [page 2] then 120 page 3's)
+
+*********************************************************************************************
+page2 : a fav button for each page, a name of the art, the name of the artist and the price 
+	  if any.
+page3 : will have the name of the artist, name of the art, the figure, breif discritpiton 
+	  about the art and its artist, price of the art if any or not for sale) and an add to 
+	  cart button, there will also be a fav button.
+page4 : show the art, the name of it and its artist, the cost, the shipping cost etc on this 
+	  page (such as add more)
+page5 : can be accessable only if you are signed in, will have the details such as cost shipping 
+	  and user detials (check out or apply for discount etc.) followed by page 6
+page6 : shows the summary of the purchase.
+page7 : profile name, email, photo, phone number, order histoy, order tracking, change current 
+	  details, bank/ card info, 
+page8 : shows what all art you like 
+page9 : talks about the creators of the website 
+
+********************************************************************************************
+
+
+1) Login
+	email-ID (login purpose)
+	Password 
+2) Signup
+	email-ID 
+	user_ID (for tracking orders and their respective files)
+	password 
+	First name 
+	Last name 
+	Phone number
+	Addreess  (Info stored can be accessed via address ID)
+3) Address 
+	Address_ID
+	Street Address
+	City 
+	State
+	Country 
+	Zipcode 
+	user_ID
+4) Product 
+	Product_ID
+	Product name 
+	Price 
+	Discription 
+	Product_owner
+	image link 
+5) Billing
+	billing_ID
+	Card numebr 
+	card exp date 
+	card address 
+	Card holder name (can be First and last name)
+	user_ID
+	CVV
+	Order_ID
+6) Order 
+	Order_ID
+	Product_ID
+		Product.Product name 
+		Product. Price 
+		Product. Owner 
+	User_ID
+		Signup.First name 
+		Signup.Last name 
+		Signup.email ID
+	UPS Link (for tracking)
+7) Profile
+	user-ID 
+	Sigup.email
+	Sigup.First name 
+	Sigup.Last name 
+	Sigup.Phone number 
+	Address.Street Address
+	Address.City
+	Address.Zipcode
+ 	Address.State
+	Address.country 
+	billing_ID      whole (billing table)
+	Order_ID
+8) Cart
+	Product table (all the rows)
+	user_ID	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

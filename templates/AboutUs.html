@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Master.css reference works when .css file is in static folder and is the following ref-->
+<!--Master.css ref-->
+<link rel="stylesheet" href="{{ url_for('static', filename='Master.css') }}">
+<!--Master.css ref end-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+ 
+html 
+{
+  box-sizing: border-box;
+}
+ 
+*, *:before, *:after
+{
+  box-sizing: inherit;
+}
+ 
+.column
+{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+ 
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+ 
+.about-section
+{
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+ 
+.container
+{
+  padding: 0 16px;
+}
+ 
+.container::after, .row::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+.title 
+{
+  color: grey;
+}
+ 
+.button
+{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+ 
+.button:hover
+{
+  background-color: #555;
+}
+ 
+@media screen and (max-width: 650px)
+{
+  .column
+  {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<!--Master Nav Code-->
+<div class="topnav">
+ 
+  <a class="active" href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="/P.html">Painting</a>
+  <a href="/WC.html">Wood Carving</a>
+  <a href="/C.html">Ceramic</a>
+  <a href="/GB.html ">Glass Blowing</a>
+  <a href="/MW.html">Metal working</a>
+  <a href="/L.html">Leather</a>
+  <a href="/contact.html">Contact US</a> <!--The about us page is the contact us page-->
+  <div class="topnav-right">
+  <a href="Cart.html">Cart<i class="fa fa-fw fa-shopping-cart"></i></a>
+      <div class="dropdown">
+      <button class="dropbtn">Your Info <i class="fa fa-fw fa-user-circle"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/Profile.html">Profile</a>
+        <a href="#">Sign In</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </div> 
+  </div> </div>
+<!--End Nav Bar-->
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>As a group art enthusiasts, our aim is to connect artists to your local community for them to share their talents.</p>
+  <p>Browse through our extensive list of available art to purchase to have in your very own home.</p>
+</div>
+ 
+<h2 style="text-align:center; color:white;">Get in Contact with Us!</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" alt="ProfilePic1" style="width:75%"> 
+      <div class="container">
+        <h2 style="color:white;">Chaitanya</h2>
+        <p class="title" style="color:rgb(255, 0, 0);">Groupmate 1</p>
+        <p style="color:white;">This is groupmate 1 description.</p>
+        <p style="color:white;">chaitanya@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="column">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" alt="ProfilePic2" style="width:75%">
+      <div class="container">
+        <h2 style="color:white;">Dustin</h2>
+        <p class="title" style="color:rgb(255, 0, 0);">Groupmate 2</p>
+        <p style="color:white;">This is groupmate 2 description.</p>
+        <p style="color:white;">dustin@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" alt="ProfilePic3" style="width:75%">
+      <div class="container">
+        <h2 style="color:white;">Uriel</h2>
+        <p class="title" style="color:rgb(255, 0, 0);">Groupmate 3</p>
+        <p style="color:white;">This is groupmate 3 description.</p>
+        <p style="color:white;">uriel@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>

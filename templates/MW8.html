@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="{{ url_for('static', filename='main.css') }}"  >
+    <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .content {
+        max-width: 1080px;
+        padding: 10px;
+        margin: auto;
+      }
+
+      .content h1 {
+        color: red;
+        padding: 10px 0px;
+      }
+
+      .details-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+
+      .details-container .image-container {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 10px;
+      }
+
+      .details-container .image-container img {
+        width: 100%;
+        -webkit-box-shadow: 6px 6px 7px rgba(53, 53, 53, 0.438);
+        box-shadow: 6px 6px 7px rgba(53, 53, 53, 0.438);
+      }
+
+      .details-container .data-container {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 10px;
+      }
+
+      .details-container .data-container .title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .details-container .data-container .title span {
+        color: black;
+        font-size: x-large;
+      }
+
+      .details-container .data-container .author,
+      .details-container .data-container .price {
+        margin-bottom: 5px;
+      }
+
+      .details-container .data-container span {
+        color: red;
+      }
+
+      .details-container .data-container .description {
+        margin-top: 20px;
+        font-weight: 500;
+      }
+
+      .details-container .data-container button {
+        padding: 5px 9px;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      .details-container .data-container .fav {
+        background-color: gray;
+      }
+
+      .details-container .data-container .fav:hover {
+        background-color: #585858;
+      }
+
+      .details-container .data-container .cart {
+        background-color: red;
+      }
+
+      .details-container .data-container .cart:hover {
+        background-color: #8d0707;
+      }
+
+      @media screen and (max-width: 700px) {
+        .details-container {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+      /*# sourceMappingURL=style.css.map */
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="/P.html">Painting</a>
+      <a href="/WC.html">Wood Carving</a>
+      <a href="/C.html">Ceramic</a>
+      <a href="/GB.html ">Glass Blowing</a>
+      <a href="/MW.html">Metal working</a>
+      <a href="/L.html">Leather</a>
+      <a href="/contact.html">Contact US</a>
+      <div class="topnav-right">
+        <a href="Cart.html">Cart<i class="fa fa-fw fa-shopping-cart"></i></a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Your Info <i class="fa fa-fw fa-user-circle"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Profile.html">Profile</a>
+            <a href="Signin.html">Sign In</a>
+            <a href="Signup.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="details-container">
+        <div class="image-container">
+          <img src="static/images/MW8.jpg" />
+        </div>
+
+        <div class="data-container">
+          <div class="title"><span>Monte Civetta</span></div>
+          <div class="author">Author: <span>Elijah Walton</span></div>
+          <div class="price">Price: <span>40$</span></div>
+          <div class="buttons">
+            <button class="fav">
+              <i class="fa-regular fa-heart"></i> Add to Favs
+            </button>
+            <button class="cart">
+              <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart
+            </button>
+          </div>
+          <div class="description">
+            Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada
+            fringilla est. Mauris eu turpis. Nulla aliquet. Proin velit. Sed
+            malesuada augue ut lacus. Nulla tincidunt, neque
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

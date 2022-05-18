@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signing Up</title>
+	<link rel="stylesheet" href="/static/signup.css">
+</head>
+<body> 
+	<form action="/signupDB" method = "POST">
+		<div class="card">
+		  <div class="container">
+                      <h2 align="center"><b><u>Sign Up</u></b></h2>
+		    <br>
+                     <input class="textbox" type="text" name="fname" placeholder="First Name" size="35" required>
+		    <br>		    
+                     <input class="textbox" type="text" name="lname" placeholder="Last Name" size="35" required>
+		    <br>		    
+                	 <input class="textbox" type="text" name="email" placeholder="Email" size="35" required>
+		    <br>		  
+		    		<input class="textbox" type="password" name="pass" placeholder="Enter Your Password" size="35" required>
+		    <br>
+		    		<!--<input class="textbox" type="text" name="compass" placeholder="Confirm Password" size="35">		  
+		    <br>-->
+		    		<input class="textbox" type="text" name="street" placeholder="Street" size="35" required>
+		    <br>
+		    		<input class="textbox" type="text" name="city" placeholder="City" size="35" required>
+		    <br>
+		    		<input class="textbox" type="text" name="state" placeholder="State" size="35" required>
+		    <br>
+		    		<input class="textbox" type="text" name="country" placeholder="Country" size="35" required>
+		    <br>
+		    <input class="textbox" type="integer" name="zipcode" placeholder="Zipcode" size="35" required>
+		    <br>
+		    		<input class="textbox" type="text" name="telephone" placeholder="Phone Number" size="35" required>
+		    <br>		    
+		    <a href="home.html"><input class="btn_Next" type="submit" name="next" value="Sign Up"></a>
+		    <input class="btn_clear" type="reset" name="clear" value="Clear">
+		  </div>
+		</div>
+	</form> 
+</body>
+</html>

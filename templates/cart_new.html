@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+<head>
+    <title>Shopping Cart</title>
+       <!--External Master CSS-->
+    <link rel="stylesheet" href="/static/master.css">
+    <!--External Cart Styles-->
+    <link rel="stylesheet" href="/static/cart.css"> <!--External JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<!--Body-->
+<body>
+    <!--Master Navigation-->
+    <div class="topnav">
+
+ <!--<a href="#Painting">Painting</a>
+        <a href="#Wood Carving">Wood Carving</a>
+        <a herf="#Ceramic">Ceramic</a>
+        <a href="#Glass bowling ">Glass Blowing</a>
+        <a href="#metalworking">Metal working</a>
+        <a href="#Leather">Leather</a>
+        <a href="#Contact">Contact US</a>
+        <div class="topnav-right">
+            <a href="cart.html">Cart<i class="fa fa-fw fa-shopping-cart"></i></a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Your Info <i class="fa fa-fw fa-user-circle"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Sign In</a>
+                    <a href="#">Sign Up</a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!--Main-->
+    <h1>Shopping Cart</h1>
+    <div class="shopping-cart">
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://i.etsystatic.com/8260369/r/il/e1d281/3609960985/il_1140xN.3609960985_hahi.jpg" alt="Day Begins">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Day Begins by Ann Brauer</div>
+                <p class="product-description">Day begins is an original art quilt that celebrates the promise of a new start. At 40 by 40 in. an abstract textile for modern home decor.</p>
+            </div>
+            <div class="product-price">1800.00</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1" max="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">1800.00</div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://i.etsystatic.com/17361296/r/il/b1a90c/3127041304/il_1140xN.3127041304_gz5y.jpg" alt="Bien Hoa Ceramics">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Bien Hoa Ceramics by VIETARTIQUES</div>
+                <p class="product-description">Bien Hoa Ceramics - Vintage - RARE - Large Vase - New Year Celebration Design Motif.</p>
+            </div>
+            <div class="product-price">425.00</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1" max="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">425.00</div>
+        </div>
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">2225.00</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">111.25</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">45.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">2381.25</div>
+            </div>
+        </div>
+        <!--<button class="checkout">Checkout</button>-->
+        <a class="checkout" href="payment">Checkout</a>
+    </div>
+    <!--External Cart Javascript-->
+    <script src="/static/JS/cart.js"></script>
+</body>
+</html> 

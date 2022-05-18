@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+   
+    <link rel="stylesheet"  href="{{ url_for('static', filename='main.css') }}"  >
+    <link rel="stylesheet"  href="{{ url_for('static', filename='stylehome.css') }}" >
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="/P.html">Painting</a>
+      <a href="/WC.html">Wood Carving</a>
+      <a href="/C.html">Ceramic</a>
+      <a href="/GB.html ">Glass Blowing</a>
+      <a href="/MW.html">Metal working</a>
+      <a href="/L.html">Leather</a>
+      <a href="/contact.html">Contact US</a> <!--The about us page is the contact us page-->
+      <div class="topnav-right">
+        <a href="Cart.html">Cart<i class="fa fa-fw fa-shopping-cart"></i></a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Your Info <i class="fa fa-fw fa-user-circle"></i>
+          </button>
+          <div class="dropdown-content">
+            <!--<a href="Profile.html">Profile</a>--> <!--Starter home does not have a profile logged in-->
+            <a href="/Signin.html">Sign In</a>
+            <a href="/Signup.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sections-container">
+      <section class="home-section">
+        <img
+          src="https://www.ft.com/__origami/service/image/v2/images/raw/https://d1e00ek4ebabms.cloudfront.net/production/a4c161aa-5365-458d-b5b0-e03c98eb1e78.jpg?source=next&fit=scale-down&quality=highest&width=1220"
+          alt="painting"
+        />
+        <div class="details">
+          <a href="/P.html"><h1>Painting</h1></a>
+          <p>
+            Featuring some of the best paintings that depict natural scenery from local artists.
+            This page contains a variety of art pieces with a classic style and
+            use some warm yet vintage colors.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <img
+          src="https://ronixtools.com/en/blog/wp-content/uploads/2021/02/woodcarving-1-1024x690.jpg"
+          alt="wood carving"
+        />
+        <div class="details">
+          <a href="/WC.html"><h1>Wood Carving</h1></a>
+          <p>
+            Featuring some of the best wood carvings that depict a number of scenes from local artists.
+            This page contains a variety of art pieces with a modern style
+            and approach to wood carvings.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <img
+          src="https://cdn.now.howstuffworks.com/media-content/f76c9efc-8322-45c3-afa6-a77853392967-1920-1080.jpg"
+          alt="ceramic"
+        />
+        <div class="details">
+          <a href="/C.html"><h1>Ceramic</h1></a> 
+          <p>
+            Featuring some of the best ceramic pieces that depicts absteract designs from local 
+            artists. This page contains a variety of art pieces with a distinguishable 
+            design and use some calm and soothing colors.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <img
+          src="https://ryanstaubgallery.com/wp-content/uploads/2019/10/img-glassblowing-1-1024x460.jpg"
+          alt="glass blowing"
+        />
+        <div class="details">
+          <a href="/GB.html"><h1>Glass Blowing</h1></a>
+          <p>
+            Featuring some of the best blown glass that depicts floral and abstract art from 
+            local artists. This page contains a variety of art pieces with a colorful and
+            use abstract and natural images.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <img
+          src="https://idsb.tmgrup.com.tr/ly/uploads/images/2022/01/14/174861.jpg"
+          alt="metal working"
+        />
+        <div class="details">
+          <a href="/MW.html"><h1>Metal Working</h1></a>
+          <p>
+            Featuring some of the best metal pieces that depict fantasy and natural scenes from 
+            local artists. This page contains a variety of art pieces with a steam punk style and
+            use of natural metal color.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <img
+          src="https://files.secure.website/wscfus/10505258/8622149/0r1gyk2npvh4ugdjeade-w1909-o.jpg"
+          alt="leather"
+        />
+        <div class="details">
+          <a href="/L.html"><h1>Leather</h1></a>
+          <p>
+            Featuring some of the best leather works that depict stylistic designs from
+            local artists. This page contains a variety of art pieces with a traditional style and
+            references many cultures utilizing the brown color of leather.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
